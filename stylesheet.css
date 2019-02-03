@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Union Regular';
+    src: url('union-webfont.woff2') format('woff2'),
+         url('union-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Union Italic';
+    src: url('union-italic-webfont.woff2') format('woff2'),
+         url('union-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Union Bold';
+    src: url('union-bold-webfont.woff2') format('woff2'),
+         url('union-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Union Bold Italic';
+    src: url('union-bolditalic-webfont.woff2') format('woff2'),
+         url('union-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}   
+
+body {
+    padding: 10px 20px;
+}
+h1, h2, h3, h4, p {
+    font-family: 'Union Regular';
+    font-weight: normal;
+}
+
+h4 {
+    font-size: .95em;
+}
+
+p {
+    font-size: .8em;
+}
