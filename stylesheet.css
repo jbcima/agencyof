@@ -43,10 +43,13 @@ h1, h2, h3, h4, p {
     font-weight: normal;
 }
 
+h1 {
+}
+
 h4 {
-    font-size: .95em;
+    font-size: .85em;
 }
 
 p {
-    font-size: .8em;
+    font-size: .75em;
 }
