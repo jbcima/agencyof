@@ -856,6 +856,10 @@ h1 {
   grid-template-rows: auto;
 }
 
+.section-6 {
+  overflow: hidden;
+}
+
 @media (max-width: 991px) {
   .full-container {
     margin-top: 0px;
