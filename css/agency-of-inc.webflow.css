@@ -570,9 +570,10 @@ h1 {
 }
 
 .image-8 {
+  overflow: hidden;
   width: 992px;
   min-height: auto;
-  min-width: 320px;
+  min-width: 992px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
