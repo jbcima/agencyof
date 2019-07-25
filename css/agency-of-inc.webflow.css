@@ -172,6 +172,7 @@ h1 {
 }
 
 .heading-2.team {
+  display: block;
   padding-bottom: 24px;
 }
 
@@ -570,8 +571,10 @@ h1 {
 
 .image-8 {
   overflow: hidden;
-  width: 1440px;
-  min-width: 1440px;
+  width: 992px;
+  max-width: none;
+  min-height: auto;
+  min-width: auto;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -811,6 +814,24 @@ h1 {
 }
 
 .section-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url('../images/team4.png');
   background-position: 50% 50%;
   background-size: 1440px;
@@ -831,6 +852,11 @@ h1 {
 
 .div-block-14 {
   display: none;
+}
+
+.div-block-15 {
+  overflow: scroll;
+  width: 100%;
 }
 
 .link-8 {
@@ -854,10 +880,6 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-}
-
-.section-6 {
-  overflow: hidden;
 }
 
 @media (max-width: 991px) {
