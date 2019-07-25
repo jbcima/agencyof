@@ -569,6 +569,7 @@ h1 {
 }
 
 .image-8 {
+  overflow: hidden;
   width: 1440px;
   min-width: 1440px;
   margin-bottom: 0px;
@@ -907,6 +908,11 @@ h1 {
     margin-bottom: 8px;
     font-size: 40px;
     line-height: 52px;
+  }
+  .heading-2.team {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .text-block {
     margin-right: 18px;
