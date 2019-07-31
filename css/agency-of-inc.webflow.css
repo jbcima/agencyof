@@ -966,10 +966,10 @@ h1 {
 
 @media (max-width: 479px) {
   .body {
-    background-image: url('../images/taglinebg.png'), url('../images/mobile-tagline.png');
-    background-position: 50% 0%, 50% 0%;
-    background-size: cover, 1440px;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url('../images/mobile-tagline.png');
+    background-position: 50% 0%;
+    background-size: 1440px;
+    background-repeat: no-repeat;
   }
   .navbar {
     display: block;
@@ -1102,8 +1102,9 @@ h1 {
   .image-8 {
     overflow: hidden;
     width: 85%;
+    height: auto;
     max-width: none;
-    min-width: 85%;
+    min-width: auto;
     margin-bottom: 33px;
     margin-left: 0px;
     padding-bottom: 0px;
