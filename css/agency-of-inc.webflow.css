@@ -994,8 +994,9 @@ h1 {
     margin-bottom: 32px;
   }
   .full-container.multidisciplinary {
-    height: 50vh;
-    min-height: 280px;
+    overflow: visible;
+    height: auto;
+    min-height: auto;
     margin-top: 100px;
     margin-bottom: 32px;
     padding-right: 32px;
@@ -1215,6 +1216,10 @@ h1 {
   .form-block {
     padding-right: 18px;
     padding-left: 18px;
+  }
+  .section-6 {
+    display: block;
+    min-width: auto;
   }
   .div-block-21 {
     display: block;
