@@ -991,6 +991,7 @@ h1 {
     overflow: hidden;
     height: 100vh;
     min-height: 560px;
+    margin-bottom: 32px;
   }
   .full-container.multidisciplinary {
     height: 50vh;
@@ -999,6 +1000,10 @@ h1 {
     margin-bottom: 32px;
     padding-right: 32px;
     padding-left: 32px;
+  }
+  .full-container.testimonials {
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
   .tagline {
     margin-top: 0px;
@@ -1104,6 +1109,7 @@ h1 {
     width: 85%;
     height: auto;
     max-width: none;
+    min-height: auto;
     min-width: auto;
     margin-bottom: 33px;
     margin-left: 0px;
@@ -1145,10 +1151,14 @@ h1 {
   .section-3 {
     height: 100vh;
     min-height: 560px;
-    background-image: url('../images/m-plane2.png');
+    background-image: url('../images/mobile-contact4.png');
+    background-position: 50% 50%;
+    background-size: 1440px;
+    background-repeat: no-repeat;
   }
   .section-4 {
     min-height: 560px;
+    margin-bottom: 64px;
     background-image: url('../images/m-test-four.png');
     background-position: 50% 50%;
   }
@@ -1205,6 +1215,20 @@ h1 {
   .form-block {
     padding-right: 18px;
     padding-left: 18px;
+  }
+  .div-block-21 {
+    display: block;
+    width: 54px;
+    height: 328px;
+    min-width: 54px;
+    background-image: url('../images/arrow.png');
+    background-position: 0% 50%;
+    background-size: 32px;
+    background-repeat: no-repeat;
+  }
+  .image-15 {
+    width: 60%;
+    margin-bottom: 32px;
   }
 }
 
