@@ -19,11 +19,17 @@ h1 {
 }
 
 .body {
+  background-image: none;
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: repeat;
+  font-family: HelveticaNow, sans-serif;
+}
+
+.body.taglinebg {
   background-image: url('../images/taglinebg.png');
-  background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: HelveticaNow, sans-serif;
 }
 
 .image {
@@ -948,6 +954,10 @@ h1 {
   height: 24px;
 }
 
+.div-block-21 {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .full-container {
     margin-top: 0px;
@@ -989,7 +999,7 @@ h1 {
   }
   .full-container {
     overflow: hidden;
-    height: 100vh;
+    height: auto;
     min-height: 560px;
     margin-bottom: 32px;
   }
@@ -1150,7 +1160,7 @@ h1 {
     position: relative;
   }
   .section-3 {
-    height: 100vh;
+    height: 560vh;
     min-height: 560px;
     background-image: url('../images/mobile-contact4.png');
     background-position: 50% 50%;
