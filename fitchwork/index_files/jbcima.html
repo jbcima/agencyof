@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://jbcima.cargo.site/followingframe/jbcima?19-08-12 -->
+<html lang="en" class="bg-black"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+
+	<title>Cargo Following</title>
+
+	<link rel="stylesheet" href="./global.css">
+
+			<link rel="stylesheet" href="./following.min.css">
+		
+	<script src="./jquery-2.1.3.min.js"></script>
+	<script src="./backbone-underscore-packaged.js"></script>
+	<script src="./require.min.js"></script>
+	<script src="./functions.js"></script>
+
+	
+	<script type="text/json" data-set="Following">[]</script>
+	<script type="text/json" data-set="FollowedBy">[]</script>
+	<script type="text/json" data-set="SitesAsEditor"></script>
+	<script type="text/template" id="loading_animation"><div class="loading_animation pulsing <%= extra_class %> {{ extra_class }}">
+	<div>
+		<svg class="loading" width="500" height="500" viewBox="0 0 500 500"><path d="M137.78 362.22c-61.975 0-112.214-50.24-112.214-112.217 0-123.954 100.478-224.432 224.43-224.432 123.955 0 224.433 100.48 224.433 224.436 0-61.977-50.24-112.216-112.22-112.216s-112.216 50.24-112.216 112.215c0 61.976-50.24 112.216-112.216 112.216M249.998 500c138.074 0 249.997-111.93 249.997-249.997 0-138.075-111.924-249.998-250-249.998C111.93.005 0 111.928 0 250.003 0 388.07 111.93 500 249.997 500" fill-rule="evenodd"/></svg>
+	</div>
+</div></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/_jsapps/following/dist/following.js?19-08-12" src="./following.js"></script><link type="text/css" rel="stylesheet" href="./foundation.css"></head>
+<body>
+
+<div class="page-overlay" data-follow-modal="">
+	<div class="page-modal">
+		
+
+	</div>
+</div>
+
+<div id="following-wrapper">
+	<div id="following_loading" style="top: 26px; left: 26px; position: absolute; z-index: 99999; display: none;">
+		<div class="loading_animation pulsing gray">
+			<div>
+				<svg class="loading" width="500" height="500" viewBox="0 0 500 500"><path d="M137.78 362.22c-61.975 0-112.214-50.24-112.214-112.217 0-123.954 100.478-224.432 224.43-224.432 123.955 0 224.433 100.48 224.433 224.436 0-61.977-50.24-112.216-112.22-112.216s-112.216 50.24-112.216 112.215c0 61.976-50.24 112.216-112.216 112.216M249.998 500c138.074 0 249.997-111.93 249.997-249.997 0-138.075-111.924-249.998-250-249.998C111.93.005 0 111.928 0 250.003 0 388.07 111.93 500 249.997 500" fill-rule="evenodd"></path></svg>
+			</div>
+		</div>
+	</div>
+	<!-- <a href="//cargo.site" class="cargo-logo" target="_blank"></a> -->
+	<div id="slide-container" class="">
+		<div class="bs container following color-white bg-black" style="display: none;">
+			<div data-container="navigation"></div>
+			<div data-section="follow-section"></div>
+			<div data-section="following-feed"></div>
+		</div>
+
+		<div class="slide-panel bs container bg-black color-white">
+			<div data-section="contact" class="hidden psa t0 r0 b0 l0"><!-- <div id="close_panel" class="clickable type-size-big color-grey-light ">×</div> -->
+<div class="row os psa t0 r0 b0 l0 py1" style="bottom: 42px; padding-left: 2rem; padding-right: 2rem;" data-message-wrapper="">
+	<div class="xa py2 cursor-default lh-1" style="border-bottom: 1px solid #333; height: 42px;" data-to-address="">
+		<span class="type-size-medium">
+			<span class="color-grey">To:</span> jeremy cimafonte design.
+		</span>
+	</div>
+
+	<div class="col-xs-6 psr" id="new-message-area" style="height: calc(100% - 42px);" data-new-message="">
+		<div class="box color-black type-lh-1-2 pos-relative" style="height: 42px;" data-from-address="">
+			
+			<div class="c12 text-wrapper pos-relative type-size-medium xa x lh-1" data-input-parent="" style="border-bottom: 1px solid #333; height: 42px;">
+				<div class="x xn py2">
+					<span class="color-grey focus-field">From:&nbsp;</span>	
+				</div>
+
+				<div class="psr x xa pr3">
+					<input class="input-reset py2 type-size-medium color-white bg-black p-right-0 type-truncate" type="email" value="me@jeremycimafonte.com" placeholder="Enter Your Email Address" name="sender" data-validate="not-empty email" style="padding: 1rem 0rem calc(1rem + 2px) 0">
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<div class="x psr pt2" data-input-parent="" style="height: calc(100vh - 132px);">
+			<textarea id="new-message" placeholder="Message:" data-validate="not-empty" class="psa hf bb3 type-size-medium new-message-height bg-black color-white" rows="4" style="vertical-align: top; -webkit-overflow-scrolling: touch;"></textarea>
+		</div>
+
+	</div>
+</div>
+
+<div class="x c12 psa b0 bg-black" data-following-footer="">
+	<div class="c8 bg-blue type-bold color-white clickable noselect x" id="send-new-message" style=" border-left: 1px solid #1a1a1a;">
+		<div class="py2 px3 c6">
+			Send Email
+		</div>
+		<div class="processing c2 py2 px2 color-white type-right type-bold pos-relative">
+			<div class="loading_animation pulsing loading_animation pulsing white inline right hidden ">
+	<div>
+		<svg class="loading" width="500" height="500" viewBox="0 0 500 500"><path d="M137.78 362.22c-61.975 0-112.214-50.24-112.214-112.217 0-123.954 100.478-224.432 224.43-224.432 123.955 0 224.433 100.48 224.433 224.436 0-61.977-50.24-112.216-112.22-112.216s-112.216 50.24-112.216 112.215c0 61.976-50.24 112.216-112.216 112.216M249.998 500c138.074 0 249.997-111.93 249.997-249.997 0-138.075-111.924-249.998-250-249.998C111.93.005 0 111.928 0 250.003 0 388.07 111.93 500 249.997 500" fill-rule="evenodd"></path></svg>
+	</div>
+</div>
+		</div>
+	</div>
+
+	<div class="xa bg-grey-medium-dark color-black py2 px3 clickable noselect" data-cancel-message="" style="margin-left: 1px;">
+		Cancel
+	</div>
+</div>
+</div>
+			<div data-section="cart" class="hidden psa t0 r0 b0 l0"></div>
+			<div data-section="import" class="hidden psa t0 r0 b0 l0 admin-wrapper"></div>
+			<div id="processing" style="display:none;">
+				<div class="processing color-white type-center type-bold">
+					<div class="loading_animation_placeholder">
+					</div>
+					<div class="message type-size-big type-normal" style="display: none; z-index: 2;">
+						Sent
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+	<script type="text/javascript">
+
+		var Following  = window.Following || { };
+		var Cargo = Cargo || { };
+
+		_.extend( Following.Events = {}, Backbone.Events );
+
+		// moved here because Safari back button cache
+					require(["/_jsapps/following/dist/following.js?19-08-12"]);
+			</script>
+
+</body></html>
