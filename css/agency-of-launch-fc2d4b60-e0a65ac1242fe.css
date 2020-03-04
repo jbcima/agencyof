@@ -2052,6 +2052,10 @@ figcaption {
   text-align: left;
 }
 
+.paragraph-5.grid6 {
+  font-size: 24px;
+}
+
 .link-5 {
   color: #9b9b9b;
   font-weight: 300;
@@ -2069,6 +2073,7 @@ figcaption {
 }
 
 .text-block-4 {
+  width: 50%;
   text-align: left;
 }
 
@@ -2092,6 +2097,13 @@ figcaption {
 .link-block-6 {
   padding-right: 30px;
   padding-left: 30px;
+}
+
+.grid-6 {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 @media screen and (max-width: 991px) {
@@ -2477,6 +2489,7 @@ figcaption {
   }
   .text-block-4 {
     position: relative;
+    width: 100%;
   }
   .div-block-70 {
     position: relative;
@@ -2544,8 +2557,8 @@ figcaption {
     justify-content: flex-start;
   }
   .introduction.two {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .pane {
     width: auto;
