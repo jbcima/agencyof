@@ -1339,6 +1339,10 @@ figcaption {
 
 .body-2 {
   overflow: visible;
+  background-image: url('../images/work3.png');
+  background-position: 0% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .content-mobile {
@@ -1989,6 +1993,7 @@ figcaption {
 
 .grid-5 {
   width: 100%;
+  max-width: 900px;
   padding-right: 0px;
   justify-items: center;
   -webkit-box-align: start;
