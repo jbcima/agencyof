@@ -1341,6 +1341,13 @@ figcaption {
   overflow: visible;
 }
 
+.body-2.work {
+  background-image: url('../images/work3.png');
+  background-position: 0% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .content-mobile {
   display: none;
 }
@@ -2003,8 +2010,8 @@ figcaption {
   grid-column-gap: 48px;
   grid-row-gap: 48px;
   grid-template-areas: "Area";
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr 48px 1fr 48px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   border-style: solid;
@@ -2040,7 +2047,7 @@ figcaption {
   max-width: 600px;
   padding-top: 16px;
   color: #000;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   text-align: left;
 }
@@ -2224,7 +2231,11 @@ figcaption {
     display: block;
   }
   .grid-5 {
+    max-width: 100%;
     grid-row-gap: 24px;
+  }
+  .paragraph-5 {
+    font-size: 16px;
   }
 }
 
