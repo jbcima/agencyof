@@ -1339,10 +1339,6 @@ figcaption {
 
 .body-2 {
   overflow: visible;
-  background-image: url('../images/work3.png');
-  background-position: 0% 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .content-mobile {
@@ -2007,8 +2003,8 @@ figcaption {
   grid-column-gap: 48px;
   grid-row-gap: 48px;
   grid-template-areas: "Area";
-  -ms-grid-columns: 1fr 48px 1fr 48px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   border-style: solid;
@@ -2041,9 +2037,10 @@ figcaption {
 
 .paragraph-5 {
   display: block;
+  max-width: 600px;
   padding-top: 16px;
   color: #000;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 300;
   text-align: left;
 }
@@ -2062,6 +2059,32 @@ figcaption {
 .link-7 {
   color: #8d8d8d;
   text-decoration: none;
+}
+
+.text-block-4 {
+  text-align: left;
+}
+
+.div-block-70 {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+}
+
+.div-block-71 {
+  position: relative;
+}
+
+.image-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.link-block-6 {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2440,6 +2463,14 @@ figcaption {
   .div-block-69 {
     overflow: hidden;
     height: 300px;
+  }
+  .text-block-4 {
+    position: relative;
+  }
+  .div-block-70 {
+    position: relative;
+    padding-top: 16px;
+    text-align: left;
   }
 }
 
