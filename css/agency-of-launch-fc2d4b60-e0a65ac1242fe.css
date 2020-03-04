@@ -2296,6 +2296,7 @@ figcaption {
     overflow: visible;
     height: auto;
     margin-top: 110px;
+    background-color: #fff;
   }
   .pane.mobile {
     display: none;
@@ -2427,6 +2428,8 @@ figcaption {
   }
   .animation.block.one {
     position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .div-block-55 {
     position: fixed;
