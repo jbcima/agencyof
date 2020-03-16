@@ -201,6 +201,14 @@ figcaption {
   background-color: #000;
   background-image: none;
   color: #fff;
+  font-size: 24px;
+}
+
+.button.request-call.smaller {
+  height: 50px;
+  padding: 0px 20px;
+  font-size: 22px;
+  line-height: 50px;
 }
 
 .project-content {
@@ -1065,6 +1073,10 @@ figcaption {
   justify-content: center;
 }
 
+.paragraph-3.email {
+  font-weight: 300;
+}
+
 .container-3 {
   height: 50vh;
 }
@@ -1567,6 +1579,7 @@ figcaption {
   background-color: #000;
   background-image: none;
   color: #fff;
+  font-size: 24px;
 }
 
 .button-3.request-call:hover {
@@ -1583,9 +1596,9 @@ figcaption {
 }
 
 .text-field {
-  display: inline-block;
+  display: block;
   width: auto;
-  height: 40px;
+  height: 50px;
   margin-bottom: 0px;
   padding-left: 0px;
   border: 0px solid #000;
@@ -1596,26 +1609,32 @@ figcaption {
 }
 
 .submit-button {
+  display: block;
+  width: 56px;
+  height: 40px;
+  padding-right: 0px;
+  padding-left: 0px;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(73%, hsla(0, 0%, 76.9%, 0)), to(hsla(0, 0%, 100%, 0.21)));
-  background-image: linear-gradient(180deg, hsla(0, 0%, 76.9%, 0) 73%, hsla(0, 0%, 100%, 0.21));
+  background-image: url('../images/link.svg'), -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+  background-image: url('../images/link.svg'), linear-gradient(180deg, #000, #000);
+  background-position: 50% 50%, 0px 0px;
+  background-size: 14px 14px, auto;
+  background-repeat: no-repeat, repeat;
   font-family: franklin-gothic-urw, sans-serif;
   color: #000;
+  line-height: 40px;
 }
 
 .form-block {
-  display: none;
+  display: block;
 }
 
 .div-block-58 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 40px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -2073,6 +2092,10 @@ figcaption {
   text-decoration: none;
 }
 
+.div-block-68 {
+  display: none;
+}
+
 .text-block-4 {
   width: 50%;
   text-align: left;
@@ -2107,6 +2130,39 @@ figcaption {
   grid-template-rows: auto;
 }
 
+.link-block-7 {
+  display: block;
+  text-decoration: none;
+}
+
+.bold-text-4 {
+  text-decoration: none;
+}
+
+.bold-text-4:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 991px) {
   .button {
     height: 40px;
@@ -2114,6 +2170,9 @@ figcaption {
     padding-left: 24px;
     font-size: 22px;
     line-height: 40px;
+  }
+  .button.request-call {
+    font-size: 22px;
   }
   .navigation {
     display: none;
@@ -2209,12 +2268,20 @@ figcaption {
     font-size: 22px;
     line-height: 40px;
   }
+  .image-7 {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
   .div-block-56 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
     text-align: center;
+  }
+  .submit-button {
+    width: 40px;
   }
   .navigation-wrap {
     margin-right: 0px;
@@ -2261,6 +2328,13 @@ figcaption {
     height: 56px;
     line-height: 56px;
     text-align: center;
+  }
+  .button.request-call.smaller {
+    height: 56px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    line-height: 56px;
   }
   .card-wrap {
     -webkit-box-flex: 1;
@@ -2446,6 +2520,8 @@ figcaption {
   }
   .contact {
     height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), color-stop(23%, #fff));
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff 23%);
   }
   .description-2-2 {
     opacity: 1;
@@ -2463,11 +2539,17 @@ figcaption {
     line-height: 56px;
     text-align: center;
   }
+  .button-3.request-call {
+    font-size: 22px;
+  }
   .image-7 {
     display: none;
   }
   .text-field {
     font-size: 22px;
+  }
+  .submit-button {
+    width: 56px;
   }
   .div-block-58 {
     position: relative;
@@ -2502,6 +2584,16 @@ figcaption {
     position: relative;
     padding-top: 16px;
     text-align: left;
+  }
+  .form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -2640,6 +2732,8 @@ figcaption {
   .contact {
     padding-right: 30px;
     padding-left: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), color-stop(22%, #fff));
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff 22%);
   }
   .description-2-2 {
     padding-right: 30px;
