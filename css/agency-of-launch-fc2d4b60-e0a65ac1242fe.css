@@ -1598,7 +1598,7 @@ figcaption {
 .text-field {
   display: block;
   width: auto;
-  height: 50px;
+  height: 40px;
   margin-bottom: 0px;
   padding-left: 0px;
   border: 0px solid #000;
@@ -2172,7 +2172,9 @@ figcaption {
     line-height: 40px;
   }
   .button.request-call {
+    height: 50px;
     font-size: 22px;
+    line-height: 50px;
   }
   .navigation {
     display: none;
@@ -2268,6 +2270,11 @@ figcaption {
     font-size: 22px;
     line-height: 40px;
   }
+  .button-3.request-call {
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+  }
   .image-7 {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -2284,7 +2291,7 @@ figcaption {
     font-size: 22px;
   }
   .submit-button {
-    width: 40px;
+    width: 50px;
   }
   .navigation-wrap {
     margin-right: 0px;
