@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Mon Mar 16 2020 15:10:38 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Mar 16 2020 23:08:52 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5e66c29630d9fb805dab982e" data-wf-site="5e5ee26e3de02ae2e7803b30">
 <head>
   <meta charset="utf-8">
@@ -93,7 +93,7 @@ display: none !important;
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script>
 var filename = 'guide.pdf';
-var dataUri = '://www.of.agency/download/guide.pdf'
+var dataUri = 'https://www.of.agency/download/guide.pdf'
 var a = document.createElement('a');
 function download(url, filename) {
 fetch(url).then(function(t) {
@@ -106,9 +106,33 @@ fetch(url).then(function(t) {
     );
 });
 }
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
 $(document).ready(function(){
-	download(dataUri, filename)
-	ga('send', 'event', 'Download', 'PDF', filename)
+  ga('send', 'event', 'Download', 'PDF', filename)
+  if( isMobile.any() ) {
+  window.location.href = dataUri;
+  } else {
+    download(dataUri, filename)
+  }
 });
 </script>
   <script>
@@ -127,23 +151,6 @@ function throttle(fn, wait) {
     }
   }
 }
-        var onScroll = throttle(function(direction) {
-        console.log(direction);
-            if (direction == false) {
-                $("#w-slider-arrow-right").trigger('tap');
-            } else {
-                $("#w-slider-arrow-left").trigger('tap');
-            }
-        }, 1100);
-ScrollOut({
-  onShown: function(el) {
-    // use the web animation API
-    console.log('shown')
-    onScroll(false);
-  },
-  onHidden: function(el) {
-  }
-});
     </script>
   <script>
 if( $('#desktop-header').is(':hidden')) {

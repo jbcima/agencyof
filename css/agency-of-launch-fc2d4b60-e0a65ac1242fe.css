@@ -1619,8 +1619,8 @@ figcaption {
   border-color: rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   background-color: #fff;
-  background-image: url('../images/link.svg'), -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
-  background-image: url('../images/link.svg'), linear-gradient(180deg, #000, #000);
+  background-image: url('../images/caret-white.svg'), -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+  background-image: url('../images/caret-white.svg'), linear-gradient(180deg, #000, #000);
   background-position: 50% 50%, 0px 0px;
   background-size: 14px 14px, auto;
   background-repeat: no-repeat, repeat;
