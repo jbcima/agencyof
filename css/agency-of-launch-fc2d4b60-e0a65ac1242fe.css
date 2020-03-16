@@ -201,7 +201,7 @@ figcaption {
   background-color: #000;
   background-image: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .button.request-call.smaller {
@@ -1579,7 +1579,7 @@ figcaption {
   background-color: #000;
   background-image: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .button-3.request-call:hover {
@@ -1604,7 +1604,7 @@ figcaption {
   border: 0px solid #000;
   font-family: franklin-gothic-urw, sans-serif;
   color: #333;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -2279,6 +2279,9 @@ figcaption {
     -ms-grid-row-align: center;
     align-self: center;
     text-align: center;
+  }
+  .text-field {
+    font-size: 22px;
   }
   .submit-button {
     width: 40px;
