@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Wed Mar 18 2020 15:28:19 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Mar 18 2020 15:36:25 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5e5ff499b66e5b7e766fdda3" data-wf-site="5e5ee26e3de02ae2e7803b30">
 <head>
   <meta charset="utf-8">
@@ -24,6 +24,18 @@ display: none;
 }
 .w-nav-overlay {
 display: none !important;
+}
+</style>
+  <style>
+.blockrain-game-over-holder, .blockrain-start-holder, .blockrain-score-holder {
+display: none !important;
+width: 1px;
+height: 1px;
+position: fixed;
+top: 0;
+right: 0;
+overflow: hidden;
+visibility: hidden;
 }
 </style>
 </head>
@@ -414,10 +426,5 @@ canvas.style.width = rect.width + 'px';
 canvas.style.height = rect.height + 'px';
 })
 </script>
-  <style>
-.blockrain-game-over-holder, .blockrain-start-holder, .blockrain-score-holder {}
-display: none;
-}
-</style>
 </body>
 </html>
