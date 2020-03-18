@@ -1540,6 +1540,11 @@ figcaption {
   align-items: flex-start;
 }
 
+.description-2-2 {
+  position: static;
+  height: auto;
+}
+
 .grid-4 {
   width: auto;
   max-width: 1136px;
@@ -1549,6 +1554,11 @@ figcaption {
   grid-template-columns: 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+.grid-4.tetris {
+  position: absolute;
+  height: 100vh;
 }
 
 .button-3 {
@@ -1588,7 +1598,7 @@ figcaption {
 }
 
 .image-7 {
-  opacity: 1;
+  opacity: 0;
 }
 
 .div-block-56 {
@@ -1605,6 +1615,7 @@ figcaption {
   font-family: franklin-gothic-urw, sans-serif;
   color: #333;
   font-size: 30px;
+  line-height: 20px;
   font-weight: 300;
 }
 
@@ -2163,6 +2174,16 @@ figcaption {
   align-items: center;
 }
 
+.div-block-72 {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  width: 506px;
+  height: 100px;
+}
+
 @media screen and (max-width: 991px) {
   .button {
     height: 40px;
@@ -2605,6 +2626,9 @@ figcaption {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .div-block-72 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2884,6 +2908,12 @@ figcaption {
 
 @media screen and (max-width: 767px) {
   #w-node-a7a5b69781b9-766fdda3 {
+    -webkit-box-ordinal-group: 10000;
+    -webkit-order: 9999;
+    -ms-flex-order: 9999;
+    order: 9999;
+  }
+  #w-node-a244836efec0-766fdda3 {
     -webkit-box-ordinal-group: 10000;
     -webkit-order: 9999;
     -ms-flex-order: 9999;
